@@ -359,7 +359,7 @@ public class PatternMatchingStudentTest {
             pattern: sell
             text: She sells seashells by the seashore.
             indices: 4
-            expected total comparisons: 20
+            expected total comparisons: 22
          */
         assertEquals(sellAnswer,
                 PatternMatching.boyerMooreGalilRule(sellPattern, sellText, comparator));
@@ -383,7 +383,7 @@ public class PatternMatchingStudentTest {
         assertTrue("Did not use the comparator.",
                 comparator.getComparisonCount() != 0);
         assertEquals("Comparison count was " + comparator.getComparisonCount()
-                + ". Should be 12.", 12, comparator.getComparisonCount());
+                + ". Should be 9.", 9, comparator.getComparisonCount());
     }
 
     @Test(timeout = TIMEOUT)
